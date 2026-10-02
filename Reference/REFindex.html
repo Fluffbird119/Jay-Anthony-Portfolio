@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Developer Portfolio & Pitch</title>
+  <style type="text/css" media="all">@import "css/REFmaster.css";</style>
+  
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#" class="logo">[Your Name]</a>
+      <ul class="nav-links">
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero / Pitch Section -->
+    <section class="hero">
+      <span class="hero-tag">Software &amp; Systems Developer</span>
+      <h1>Building performance-driven applications &amp; scalable software systems.</h1>
+      <p>
+        I specialize in low-level programming, interactive tools, and data processing architectures. 
+        Currently focused on delivering clean, well-tested code that solves complex operational challenges.
+      </p>
+      <div class="cta-group">
+        <a href="#projects" class="btn btn-primary">View Featured Projects</a>
+        <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+      </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section id="skills" class="skills-section">
+      <h2 class="section-title">Technical Capabilities</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Languages &amp; Systems</h3>
+          <div class="skill-tags">
+            <span class="tag">C</span>
+            <span class="tag">C++</span>
+            <span class="tag">C#</span>
+            <span class="tag">Python</span>
+            <span class="tag">HTML5/CSS3</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>Frameworks &amp; Engines</h3>
+          <div class="skill-tags">
+            <span class="tag">Unity</span>
+            <span class="tag">FMOD Studio</span>
+            <span class="tag">scikit-learn</span>
+            <span class="tag">TensorFlow</span>
+            <span class="tag">pandas</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>Tools &amp; Architecture</h3>
+          <div class="skill-tags">
+            <span class="tag">Git / GitHub</span>
+            <span class="tag">Memory Allocators</span>
+            <span class="tag">Data Structures</span>
+            <span class="tag">Linear Algebra</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Flagship Projects -->
+    <section id="projects" class="projects-section">
+      <h2 class="section-title">Flagship Case Studies</h2>
+
+      <!-- Project 1 -->
+      <article class="case-study">
+        <div class="case-header">
+          <div>
+            <h3 class="case-title">1. Real-Time Incident Scheduling &amp; Queue Simulation Engine</h3>
+            <p style="color: var(--accent); font-size: 0.9rem;">C++ / Standard Library / Priority Queues</p>
+          </div>
+          <div class="case-links">
+            <a href="#" target="_blank" rel="noopener">GitHub Repo &rarr;</a>
+          </div>
+        </div>
+        <div class="case-grid">
+          <div class="case-block">
+            <h4>The Challenge</h4>
+            <p>Simulating concurrent event reviews under strict timing bounds requires dynamic priority handling and zero-allocation runtime stability.</p>
+          </div>
+          <div class="case-block">
+            <h4>Key Decisions</h4>
+            <p>Designed a custom min-heap Priority Queue wrapper over std::vector paired with circular linked lists to ensure $O(\log n)$ scheduling updates.</p>
+          </div>
+          <div class="case-block">
+            <h4>Measurable Impact</h4>
+            <p>Achieved deterministic tick-by-tick execution with zero memory leaks across 10,000+ simulated concurrent incidents.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="case-study">
+        <div class="case-header">
+          <div>
+            <h3 class="case-title">2. Image Classification &amp; Feature Extraction Pipeline</h3>
+            <p style="color: var(--accent); font-size: 0.9rem;">Python / scikit-learn / TensorFlow / pandas</p>
+          </div>
+          <div class="case-links">
+            <a href="#" target="_blank" rel="noopener">GitHub Repo &rarr;</a>
+          </div>
+        </div>
+        <div class="case-grid">
+          <div class="case-block">
+            <h4>The Challenge</h4>
+            <p>Extracting high-signal visual features from noisy image data without overfitting baseline decision tree classifiers.</p>
+          </div>
+          <div class="case-block">
+            <h4>Key Decisions</h4>
+            <p>Combined HSV color distribution histograms with Sobel edge detection algorithms to form a high-density, low-dimensional feature vector.</p>
+          </div>
+          <div class="case-block">
+            <h4>Measurable Impact</h4>
+            <p>Improved baseline Decision Tree accuracy on CIFAR-10 subset validation sets by 18% over raw pixel inputs.</p>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <p>Interested in working together or reviewing source code?</p>
+    <p style="margin-top: 0.5rem;">
+      <a href="mailto:your.email@domain.com" style="color: var(--accent);">your.email@domain.com</a> &bull; 
+      <a href="https://github.com" style="color: var(--accent);">GitHub</a> &bull; 
+      <a href="https://linkedin.com" style="color: var(--accent);">LinkedIn</a>
+    </p>
+  </footer>
+
+</body>
+</html>
