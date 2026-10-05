@@ -193,6 +193,17 @@
       margin-left: 1rem;
     }
 
+    .other-projects-link {
+      text-align: center;
+    }
+
+    .other-projects-link a {
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
     .case-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
