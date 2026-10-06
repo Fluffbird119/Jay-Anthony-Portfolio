@@ -82,20 +82,34 @@
         <div clase="case-grid">
           <div class="case-block">
             <h4>
-              Rage System
+              FMOD Bank Loading
             </h4>
-            <img src="images/codeSS.png" style="zoom: 50%; justify-content: center;" />
+            <img src="images/LoadBanksRoutine.png" style="zoom: 50%; justify-content: center;" />
             <p>
-              This is my rage system I implemented into the game
+              &bull; The first major challenge of this project was loading in FMOD banks during runtime and storing them in a way that could be accessed easily later on. <br/>
+              &bull; To store the banks properly me and my team used a Hash Table of string names and corrosponding EventReferences. <br/>
+              &bull; The for loop then loads every event associated with every bank that we had in the project and if the event was apart of the Music bank it got stored in a special MusicEventReferences Hash Table which did stuff in our music manager. <br/>
             </p>
-          </div>
+          <br/>
           <div class="case-block">
             <h4>
-              Header
+              Audio Log / Subtitle System
             </h4>
+            <img src="images/SubtitleShowing.png" style="zoom: 45%; justify-content: center;" />
             <p>
-              gooper smoper
+              &bull; Another feature that needed added and system that needed designing was subtitling for the in game dialog. <br/>
+              &bull; Our way of doing this is by using a ScriptableObject that stored a list of a custom struct that held all the info for each subtitle line (the length, the text that needed to be displayed and if it was being spoken into a radio) and then reading and displaying it. <br/>
+              &bull; This system of reading the ScriptableObjects and displaying the subtitles is shown above.
             </p>
+          </div>
+          <br/>
+          <div class="case-block">
+            <h4>
+              In Game Audio Demo Link
+            </h4>
+            <div class="demo-links">
+              <a href="https://youtu.be/-qCoNFhaLjA" target="_blank" rel="noopener"> Audio Demo &rarr; </a>
+            </div>
           </div>
         </div>
       </article>

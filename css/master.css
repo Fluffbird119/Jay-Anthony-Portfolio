@@ -197,6 +197,13 @@ html {
       margin-left: 1rem;
     }
 
+    .demo-links a {
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
     .other-projects-link {
       text-align: center;
     }
