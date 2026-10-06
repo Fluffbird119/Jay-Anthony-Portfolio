@@ -33,34 +33,20 @@ html {
       margin: 0 auto;
     }
 
-    /* Navigation */
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 2rem 0;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .nav-links {
-      font-weight: 700;
-      font-size: 1.25rem;
-      display: flex;
-      gap: 1.5rem;
-      list-style: none;
-      text-decoration: none;
-    }
-
-    .nav-links a {
-      color: var(--accent);
-      text-decoration: none;
-      font-size: 0.95rem;
-      transition: color 0.2s ease;
-    }
-
     /* Hero Pitch */
     .hero {
+      position: relative;
       padding: 3rem 0 4rem;
+    }
+
+    .hero-profile-img {
+      position: absolute;
+      top: 3rem;
+      right: 0;
+      width: 140px;
+      height: auto;
+      border-radius: var(--radius);
+      object-fit: cover;
     }
 
     .hero h1 {
