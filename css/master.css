@@ -230,6 +230,12 @@ html {
       font-size: 0.9rem;
     }
 
+    .move-up {
+      position: relative;
+      top: -1em;
+      left: -0.5em
+    }
+
     @media (max-width: 640px) {
       .hero h1 { font-size: 2rem; }
       .case-study { padding: 1.5rem; }
