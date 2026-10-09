@@ -14,12 +14,171 @@
         Gameplay and Systems Programmer
       </p>
       <div class="cta-group">
-        <a href="#projects" class="btn btn-primary"> Projects </a>
-        <a href="#contact" class="btn btn-primary"> Contact </a>
+        <a href="#projects" class="btn btn-primary"> Featured Projects </a>
+        <a href="pages/otherprojects.html" target="_blank" rel="noopener" class="btn btn-primary"> Other Projects </a>
+        <a href="#skills" class="btn btn-primary"> Contact / About me </a>
         <a href="https://github.com/Fluffbird119" target="_blank" rel="noopener" class="btn btn-primary"> Github </a>
       </div>
       <img src="images/PortfolioPicture.png" class="hero-profile-img" style="float: right; zoom: 120%; justify-content: center;" />
       <br/>
+    </section>
+
+    <section id="projects" class="projects-section">
+      <h2 class="section-title"> Featured Projects </h2>
+
+      <!-- Project 1 -->
+      <article class="case-study">
+        <div class="case-header">
+          <div>
+            <h3 class="case-title"> Project: Deimos (Aug 2025 - Aug 2026) </h3>
+            <p style="color: var(--accent); font-size: 0.9rem;"> FMOD &bull; Unity &bull; C# &bull; Systems Programming </p>
+          </div>
+          <div class="case-links">
+            <a href="https://github.com/PurdueSIGGD/SIGGD-GAME-2025" target="_blank" rel="noopener"> GitHub Repo &rarr; </a>
+            <a href="https://store.steampowered.com/app/5031770/Project_Deimos/" target="_blank" rel="noopener"> Steam Page &rarr; </a>
+          </div>
+        </div>
+        <div clase="case-grid">
+          <div class="case-block">
+            <h4> Overview </h4>
+            <p>
+              &bull; For this project I was mainly focused on systems programming and more specifically audio implementation. <br/>
+              &bull; We decided to use FMOD as it is an industry standard and it was me and my team's job to figure out how to implement it properly. <br/>
+              &bull; We made the audio importing to get all of our music/sfx into the game and once that was finished with split up to each make different audio systems in game <br/>
+              &bull; The ones I made were: <br/>
+              &emsp; &bull; The dialog system and the subtitling for it <br/>
+              &emsp; &bull; The music managing system which included crossfading and managing the music being consistent between levels. <br/>
+              &emsp; &bull; A subtitle importer to make putting subtitles in the game easy and doable by non programmers. <br/>
+              &bull; I also learned the ins and outs of FMOD Studio and then taught the audio team how to properly put in their sound and music so that it would work with our naming conventions and bank assignments. <br/>
+            </p>
+            <br/>
+          </div>
+          <div class="case-block">
+            <h4>
+              In Game Demonstration Of The Subtitle And Dialog System
+            </h4>
+            <div class="demo-links">
+              <iframe 
+                width="850" 
+                height="475" 
+                src="https://www.youtube.com/embed/-qCoNFhaLjA" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+              </iframe> 
+            </div>
+          </div>
+          <br/>
+          <div class="case-block">
+            <h4>
+              FMOD Bank Loading
+            </h4>
+            <img src="images/LoadBanksRoutine.png" style="zoom: 50%; justify-content: center;" />
+            <p>
+              &bull; The first major challenge of this project was loading in FMOD banks during runtime and storing them in a way that could be accessed easily later on. <br/>
+              &bull; To store the banks properly me and my team used a Hash Table of string names and corresponding EventReferences. <br/>
+              &bull; The for loop then loads every event associated with every bank that we had in the project and if the event was a part of the Music bank it got stored in a special MusicEventReferences Hash Table which did stuff in our music manager. <br/>
+            </p>
+          <br/>
+          <div class="case-block">
+            <h4>
+              Audio Log / Subtitle System
+            </h4>
+            <img src="images/SubtitleShowing.png" style="zoom: 45%; justify-content: center;" />
+            <p>
+              &bull; Another feature that needed added and system that needed designing was subtitling for the in game dialog. <br/>
+              &bull; Our way of doing this is by using a ScriptableObject that stored a list of a custom struct that held all the info for each subtitle line (the length, the text that needed to be displayed and if it was being spoken into a radio) and then reading and displaying it. <br/>
+              &bull; This system of reading the ScriptableObjects and displaying the subtitles is shown above.
+            </p>
+          </div>
+          <br/>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="case-study">
+        <div class="case-header">
+          <div>
+            <h3 class="case-title"> COLORSNATCHER (Sep 2026 - Cur) </h3>
+            <p style="color: var(--accent); font-size: 0.9rem;"> Unity &bull; C# &bull; Gameplay Programming </p>
+          </div>
+          <div class="case-links">
+            <a href="https://github.com/Fluffbird119/COLORSNATCHER-Repo" target="_blank" rel="noopener"> GitHub Repo &rarr; </a>
+            <a href="https://chrome12345.itch.io/colorsnatcher" target="_blank" rel="noopener"> Itch.io Page &rarr; </a>
+          </div>
+        </div>
+        <div clase="case-grid">
+          <div class="case-block">
+            <h4>
+              Overview
+            </h4>
+            <p>
+              &bull; This project was initially made by me, a programmer friend of mine and an artist during a 48 hour long game jam with the theme: color. <br/>
+              &bull; I made the player, the player's powerups and implemented the UI. <br/>
+              &bull; Since our team had no designer I had complete freedom to design the abilities however I chose (more detail on that in the Player Powerups section). <br/>
+              &bull; Even though it started as a game jam we have continued to work on the game even past the game jam and are working on it. <br/>
+            </p>
+            <br/>
+          </div>
+
+          <div class="case-block">
+            <h4>
+              Player Movement and Attacking
+            </h4>
+            <div class="demo-links">
+               <iframe 
+                width="850" 
+                height="475" 
+                src="https://www.youtube.com/embed/1y-qk4a3h_c" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+              </iframe>  
+            </div>
+            <p>
+              &bull; A large amount of fine tuning went into making the players attack feel good and look good. <br/>
+              &bull; The time between when you click and your hitbox being active is minimized while the time after the hitbox is off is allowed to drag slightly so that the player can feel and view the impact of their attack while waiting for the next to be ready
+            </p>
+          </div>
+          <br/>
+          <div class="case-block">
+            <h4>
+              Player Powerups
+            </h4>
+            <div class="demo-links">
+              <iframe 
+                width="850" 
+                height="475" 
+                src="https://www.youtube.com/embed/lsEmHDuApcc" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+              </iframe>  
+            </div>
+            <img src="images/COLORSNATCHERDashSnippet.png" style="zoom: 65%; justify-content: center;" />
+            <p>
+              &bull; The above code is a small snippet from the dashing routine for the player to show how I did the dashing logic to make it feel smooth and fun for players. <br/>
+              &bull; Each ability was desgined and coded to be unique and fufil a different need of the player. <br/>
+              &emsp; &bull; The red rage gives the player more damage move speed and attack speed to help with tanky enemies. <br/>
+              &emsp; &bull; The yellow dash gives the player extra needed mobility and iframes to help with ranged enemies. <br/>
+              &emsp; &bull; The green goop ball gives the player ranged options and stuns enemies to help with swarms of enemies. <br/>
+              &bull; Each of these I desgined and then implemented quickly and effectivly.
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <article class="case-study">
+        <div class="other-projects-link">
+          <a href="pages/otherprojects.html" style="color: var(--accent)"  target="_blank" rel="noopener" > Other Projects &rarr; </a>
+        </div>
+      </article>
     </section>
 
     <section id="skills" class="skills-section">
@@ -54,140 +213,10 @@
         </div>
       </div>
     </section>
-
-    <section id="projects" class="projects-section">
-      <h2 class="section-title"> Featured Projects </h2>
-
-      <!-- Project 1 -->
-      <article class="case-study">
-        <div class="case-header">
-          <div>
-            <h3 class="case-title"> Project: Deimos (Aug 2025 - Aug 2026) </h3>
-            <p style="color: var(--accent); font-size: 0.9rem;"> FMOD &bull; Unity &bull; C# &bull; Systems Programming </p>
-          </div>
-          <div class="case-links">
-            <a href="https://github.com/PurdueSIGGD/SIGGD-GAME-2025" target="_blank" rel="noopener"> GitHub Repo &rarr; </a>
-            <a href="https://store.steampowered.com/app/5031770/Project_Deimos/" target="_blank" rel="noopener"> Steam Page &rarr; </a>
-          </div>
-        </div>
-        <div clase="case-grid">
-          <div class="case-block">
-            <h4>
-              FMOD Bank Loading
-            </h4>
-            <img src="images/LoadBanksRoutine.png" style="zoom: 50%; justify-content: center;" />
-            <p>
-              &bull; The first major challenge of this project was loading in FMOD banks during runtime and storing them in a way that could be accessed easily later on. <br/>
-              &bull; To store the banks properly me and my team used a Hash Table of string names and corresponding EventReferences. <br/>
-              &bull; The for loop then loads every event associated with every bank that we had in the project and if the event was a part of the Music bank it got stored in a special MusicEventReferences Hash Table which did stuff in our music manager. <br/>
-            </p>
-          <br/>
-          <div class="case-block">
-            <h4>
-              Audio Log / Subtitle System
-            </h4>
-            <img src="images/SubtitleShowing.png" style="zoom: 45%; justify-content: center;" />
-            <p>
-              &bull; Another feature that needed added and system that needed designing was subtitling for the in game dialog. <br/>
-              &bull; Our way of doing this is by using a ScriptableObject that stored a list of a custom struct that held all the info for each subtitle line (the length, the text that needed to be displayed and if it was being spoken into a radio) and then reading and displaying it. <br/>
-              &bull; This system of reading the ScriptableObjects and displaying the subtitles is shown above.
-            </p>
-          </div>
-          <br/>
-          <div class="case-block">
-            <h4>
-              In Game Video Demonstration Of The Subtitle System
-            </h4>
-            <div class="demo-links">
-              <iframe 
-                width="850" 
-                height="475" 
-                src="https://www.youtube.com/embed/-qCoNFhaLjA" 
-                title="YouTube video player" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerpolicy="strict-origin-when-cross-origin" 
-                allowfullscreen>
-              </iframe> 
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <!-- Project 2 -->
-      <article class="case-study">
-        <div class="case-header">
-          <div>
-            <h3 class="case-title"> COLORSNATCHER (Sep 2026 - Cur) </h3>
-            <p style="color: var(--accent); font-size: 0.9rem;"> Unity &bull; C# &bull; Gameplay Programming </p>
-          </div>
-          <div class="case-links">
-            <a href="https://github.com/Fluffbird119/COLORSNATCHER-Repo" target="_blank" rel="noopener"> GitHub Repo &rarr; </a>
-            <a href="https://chrome12345.itch.io/colorsnatcher" target="_blank" rel="noopener"> Itch.io Page &rarr; </a>
-          </div>
-        </div>
-        <div clase="case-grid">
-          <div class="case-block">
-            <h4>
-              Player Movement and Attacking
-            </h4>
-            <div class="demo-links">
-               <iframe 
-                width="850" 
-                height="475" 
-                src="https://www.youtube.com/embed/1y-qk4a3h_c" 
-                title="YouTube video player" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerpolicy="strict-origin-when-cross-origin" 
-                allowfullscreen>
-              </iframe>  
-            </div>
-            <p>
-              &bull; Throughtout this project I made all the parts that dealth with the player and making it feed good and look good while playing. <br/>
-              &bull; A large amount of fine tuning went into making the players attack feel good and look good. <br/>
-              &bull; The time between when you click and your hitbox being active is minimized while the time after the hitbox is off is allowed to drag slightly so that the player can feel and view the impact of their attack while waiting for the next to be ready
-            </p>
-          </div>
-          <br/>
-          <div class="case-block">
-            <h4>
-              Player Powerups
-            </h4>
-            <div class="demo-links">
-              <iframe 
-                width="850" 
-                height="475" 
-                src="https://www.youtube.com/embed/lsEmHDuApcc" 
-                title="YouTube video player" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerpolicy="strict-origin-when-cross-origin" 
-                allowfullscreen>
-              </iframe>  
-            </div>
-            <p>
-              &bull; I also designed the player's powerups that they obtain thoughout the game and the UI that displays that information. <br/>
-              &bull; Each ability was desgined and coded to be unique and fufil a different need of the player. <br/>
-              &emsp; &bull; The red rage gives the player more damage move speed and attack speed. <br/>
-              &emsp; &bull; The yellow dash gives the player extra needed mobility and iframes. <br/>
-              &emsp; &bull; The green goop ball gives the player ranged options and slows down enemies. <br/>
-              &bull; Each of these I desgined and then implemented quickly and effectivly.
-            </p>
-          </div>
-        </div>
-      </article>
-
-      <article class="case-study">
-        <div class="other-projects-link">
-          <a href="pages/otherprojects.html" style="color: var(--accent)"  target="_blank" rel="noopener" > Other Projects &rarr; </a>
-        </div>
-      </article>
-    </section>
   </main>
 
   <footer id="contact">
-    <p> Contact Me </p>
+    <p> Get In Contact </p>
     <p style="margin-top: 0.5rem;">
       <img src="images/ContactInfo.png" style="zoom: 65%; justify-content: center; margin: 5px;" />
       <span class="move-up"> &bull; </span>
