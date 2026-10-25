@@ -176,7 +176,7 @@ html {
     }
 
     .case-links a {
-      color: var(--accent);
+      /*color: var(--accent);*/
       text-decoration: none;
       font-size: 0.9rem;
       font-weight: 600;
